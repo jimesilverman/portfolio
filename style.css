@@ -375,7 +375,7 @@ hr.negative {margin:-2rem auto;}
 .hats.small {text-align: center;margin:4rem auto;}
 .hats.small img {height:6rem;width:6rem;margin:0 0 .5rem;}
 .about .hats {display:flex;justify-content:center;} 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .about .hats.small {display:block;}
 }
 @media (min-width: 768px) {
