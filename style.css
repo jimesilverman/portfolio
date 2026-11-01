@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&family=Redaction:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 :root {
     --white: hsl(225,100%,100%);
@@ -74,13 +75,13 @@ nav a:hover strong{transform: scale(1.25) rotate(-2.5deg);}
 
 h1,
 h2,
-h3 {font-weight:800;/*letter-spacing:-.025em;*/}
+h3 {font-family:"Rubik";font-weight:800;letter-spacing:-.025em;}
 h4,
 h5 {letter-spacing:.05em;}
-h1 {font-family:"Redaction";font-size:2.25rem;line-height:1.075;margin:1rem 0;}
-h1 span {}
+h1 {font-size:2.25rem;line-height:1.075;margin:1rem 0;}
+h1 span.word-complex {font-family:"Rubik Glitch";font-weight:400;}
 h4 + h1 {margin-top:0rem;}
-h2 {font-family:"Redaction";font-size:1.75rem;line-height:1.25;margin:0;}
+h2 {font-size:1.75rem;line-height:1.25;margin:0;}
 h3 {font-size:1.25rem;line-height:1.25;margin:0;}
 h3 strong {color:var(--highlight);font-weight:900;}
 h4 {font-weight:400;}
@@ -541,7 +542,7 @@ header img {box-shadow:none;}
       color: var(--text); 
       transition: var(--transition-smooth); 
     }
-    
+    /*
     .word-simple::after {
       content: ''; 
       position: absolute; 
@@ -556,7 +557,8 @@ header img {box-shadow:none;}
       opacity: 0;
       border-radius: .5rem;
     }
-
+    */
+    
     /* Hover Triggers (Applied to the whole H1) */
     .hero-title:hover .word-complex { 
       color: var(--text); 
