@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&family=Redaction:ital,wght@0,400;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Caprasimo&display=swap');
 
 :root {
     --white: hsl(225,100%,100%);
@@ -418,7 +415,7 @@ hr.negative {margin:-2rem auto;}
 .quote .flex {margin:0;flex-direction:row;align-items:center;}
 .quote .flex .text {margin:0 0 0 .5rem;}
 .quote h5 {margin:0;}
-.quote p {font-size:1rem;font-family:"Rubik"}
+.quote p {font-size:1rem;}
 @media (min-width: 768px) {
   .quote {margin:2rem 0;padding:2rem;}
   .quote .flex {;margin: 0;}
