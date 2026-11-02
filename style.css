@@ -1,35 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&family=Redaction:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
 
 :root {
     --white: hsl(225,100%,100%);
 
-    --shadow-lightest: hsla(225,75%,65%,.125); 
-    --shadow-light: hsla(225,75%,50%,.25); 
-    --shadow: hsla(225,75%,30%,.5); 
-    --shadow-dark: hsla(225,75%,15%,.75); 
+    --shadow-lightest: hsla(250,50%,65%,.125); 
+    --shadow-light: hsla(250,50%,50%,.25); 
+    --shadow: hsla(250,50%,30%,.5); 
+    --shadow-dark: hsla(250,50%,15%,.75); 
 
-    --bg-light: hsl(225,75%,95%);
-    --bg: hsl(225,75%,85%);
-    --bg-dark: hsl(225,75%,75%);
+    --bg-light: hsl(225,50%,95%);
+    --bg: hsl(225,50%,85%);
+    --bg-dark: hsl(225,50%,75%);
 
-    --text-light: hsl(225,75%,30%);
-    --text: hsl(225,75%,15%);
-    --text-dark: hsl(225,75%,5%);
+    --text-light: hsl(225,50%,30%);
+    --text: hsl(225,50%,15%);
+    --text-dark: hsl(225,50%,5%);
 
-    --link-lightest: hsl(225,75%,95%);
-    --link-light: hsl(225,75%,65%);
-    --link: hsl(225,75%,50%);
-    --link-dark: hsl(225,75%,35%);
+    --link-lightest: hsl(225,50%,95%);
+    --link-light: hsl(225,50%,75%);
+    --link: hsl(225,50%,50%);
+    --link-dark: hsl(225,50%,35%);
 
-    --accent-lightest: hsl(50,75%,95%);
-    --accent-light: hsl(50,75%,65%);
-    --accent: hsl(50,75%,50%);
-    --accent-dark: hsl(50,75%,35%);
-    --accent-darkest: hsl(50,75%,10%);
+    --accent-lightest: hsl(55,50%,95%);
+    --accent-light: hsl(55,50%,85%);
+    --accent: hsl(55,50%,50%);
+    --accent-dark: hsl(55,50%,35%);
+    --accent-darkest: hsl(55,50%,10%);
 
-    --highlight: hsl(350,75%,50%);
+    --highlight: hsl(350,50%,50%);
 
     --transition-smooth: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-linear: all 0.2s ease-in;
@@ -65,7 +66,7 @@ nav strong {padding:1rem;display:block;transition:.125s transform ease-in;}
 footer nav strong {padding:0}
 .splash nav strong {background:var(--shadow-lightest);color:var(--text-light);border-radius:.5rem;}
 nav ul {display:flex;margin:0;list-style: none;}
-nav li a {color:var(--text-light);padding:1rem .75rem;display:block;font-weight:600;border-radius:.5rem;transition:.125s transform ease-in}
+nav li a {color:var(--text-light);padding:1rem .75rem;display:block;font-weight:600;border-radius:.5rem;transition:.2s transform cubic-bezier(0.68, -0.6, 0.32, 1.6)}
 nav li a:hover {color:var(--text-dark);background:var(--shadow-lightest);transform: scale(1.125) rotate(2.5deg);}
 nav a:hover strong{transform: scale(1.25) rotate(-2.5deg);}
 @media (min-width: 768px) {
@@ -74,8 +75,7 @@ nav a:hover strong{transform: scale(1.25) rotate(-2.5deg);}
 }
 
 h1,
-h2,
-h3 {font-family:"Rubik";font-weight:800;letter-spacing:-.025em;}
+h2 {font-family:"Caprasimo";font-weight:400;letter-spacing:-.025em;}
 h4,
 h5 {letter-spacing:.05em;}
 h1 {font-size:2.25rem;line-height:1.075;margin:1rem 0;}
@@ -93,7 +93,7 @@ h2 + h5 {margin:.5rem 0 1.5rem;}
 header p {font-size:1rem;line-height:1.5;overflow:hidden;}
 header p span {font-size: 1.25rem;margin:0 .75rem;}
 /*
-header img {float: right;max-width:6rem;border:.25rem solid hsl(225,100%,100%);border-radius:.5rem;box-shadow: 0 1rem 2rem -0.5rem hsla(225,100%,15%,.5);margin:0 0 1rem 1rem;}
+header img {float: right;max-width:6rem;border:.25rem solid hsl(225,100%,100%);border-radius:.5rem;box-shadow: 0 1rem 2rem -0.5rem hsla(250,100%,15%,.5);margin:0 0 1rem 1rem;}
 */
 aside p {font-size: 1rem;text-align: center;margin:.5rem 0;}
 header img {margin: 1rem 0 1rem 1rem;float:right;transform: rotate(2.5deg);max-width:25%;border-radius:.5rem;}
@@ -412,7 +412,7 @@ hr.negative {margin:-2rem auto;}
 /*
 .quote {margin:1em 0;padding:1rem;background:hsl(225,100%,95%);border:.25rem solid hsl(225,100%,50%);border-radius:.5rem;box-shadow: 0 2rem 4rem -2rem hsla(255,100%,15%,.25)}
 */
-.quote {margin:1em 0;padding:1rem;border-radius:.5rem;background:var(--accent-lightest);color:var(--accent-darkest);}
+.quote {margin:1em 0;padding:1rem;border-radius:.5rem;background:var(--accent-light);color:var(--accent-darkest);}
 
 .quote img {width:2.5rem;border-radius:100%;}
 .quote .flex {margin:0;flex-direction:row;align-items:center;}
@@ -428,7 +428,7 @@ hr.negative {margin:-2rem auto;}
 
 .intro {margin-top:2rem;}
 header .intro p {overflow:visible;}
-.button {font-weight:600;border:0;display:inline-block;padding:1rem 2rem;background: var(--bg-light);color: var(--link);border-radius: .5rem;transition:.125s transform ease-in;}
+.button {font-weight:600;border:0;display:inline-block;padding:1rem 2rem;background: var(--bg-light);color: var(--link);border-radius: .5rem;transition:.2s transform cubic-bezier(0.68, -0.6, 0.32, 1.6);}
 .button:hover {background:var(--bg);color:var(--link-dark);transform: scale(1.075) rotate(-2.5deg);}
 .button +.button {margin-left:1rem;}
 .primary {color:var(--white);background:var(--link);}
@@ -518,7 +518,7 @@ header img {box-shadow:none;}
     
     .word-complex span { 
       display: inline-block; 
-      transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); 
+      transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); 
       translate: 0px 0px;
       rotate: 0deg;
       animation: subtle-jiggle 0.4s infinite linear;
@@ -569,7 +569,8 @@ header img {box-shadow:none;}
     .hero-title:hover .word-complex { 
       color: var(--text); 
       text-transform: none;
-      bottom:0 
+      bottom:0;
+      font-family:Caprasimo;
     }
     .hero-title:hover .word-complex span { 
       transform: translateY(0) rotate(0) translateX(0); 
