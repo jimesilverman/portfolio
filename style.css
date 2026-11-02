@@ -378,14 +378,13 @@ hr.negative {margin:-2rem auto;}
 .hats .flex {display:block;}
 .hats .flex .image {height:4rem;width:4rem;margin:0 0 .5rem;background-size:cover;background-color:var(--white);border-radius:.25rem;}
 .hats .flex .image img {height:4rem;width:4rem;}
-.hats.small {text-align: center;margin:4rem auto;}
-.hats.small img {height:6rem;width:6rem;margin:0 0 .5rem;}
+
 .about .hats {display:flex;justify-content:center;} 
 @media (max-width: 768px) {
     .about .hats.small {display:block;}
 }
 @media (min-width: 768px) {
-  .hats .flex {margin:4rem 0;}
+  .hats .flex {margin:2rem 0;}
   .hats .flex .image {float:left;margin:0 2rem 2rem 0;height:6rem;width:6rem}
   .hats .flex .text {overflow:hidden;}
   .hats .flex .image img {display:none;}
@@ -402,6 +401,13 @@ hr.negative {margin:-2rem auto;}
 .flex:hover .developer {background-image:url(images/about/developer.gif)}
 }
 
+.expertise div {margin: 1rem 0;}
+.expertise h5 {margin:.25rem 0 1rem;}
+.expertise p,
+.expertise li {font-size: 1rem;}
+.about .expertise div {margin:2rem 0;}
+
+.case-studies img {max-width: 100%}
 
 /*
 .quote {margin:1em 0;padding:1rem;background:hsl(225,100%,95%);border:.25rem solid hsl(225,100%,50%);border-radius:.5rem;box-shadow: 0 2rem 4rem -2rem hsla(255,100%,15%,.25)}
@@ -412,7 +418,7 @@ hr.negative {margin:-2rem auto;}
 .quote .flex {margin:0;flex-direction:row;align-items:center;}
 .quote .flex .text {margin:0 0 0 .5rem;}
 .quote h5 {margin:0;}
-.quote p {font-size:1rem;font-family:"Redaction"}
+.quote p {font-size:1rem;font-family:"Rubik"}
 @media (min-width: 768px) {
   .quote {margin:2rem 0;padding:2rem;}
   .quote .flex {;margin: 0;}
