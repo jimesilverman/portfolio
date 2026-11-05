@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&family=Rubik+Glitch&family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Lines&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik+Pixels&display=swap');
 
 :root {
     --white: hsl(225,100%,100%);
@@ -50,6 +51,7 @@ li {line-height:1.5;margin:.5em 0 1em;}
 }
 
 .container {max-width:48rem;margin:auto;padding:0 1rem;}
+.container img {max-width: 100%;}
 header {overflow: hidden;}
 
 nav,
@@ -77,6 +79,7 @@ h4,
 h5 {letter-spacing:.05em;}
 h1 {font-size:2.25rem;line-height:1.075;margin:1rem 0;}
 h1 span.word-complex {font-family:"Rubik Glitch";font-weight:400;}
+h1 span {color:var(--highlight);}
 h4 + h1 {margin-top:0rem;}
 h2 {font-size:1.75rem;line-height:1.25;margin:0;}
 h3 {font-size:1.25rem;line-height:1.25;margin:0;}
@@ -346,6 +349,10 @@ hr.negative {margin:-2rem auto;}
 
 
 .about {margin:2rem 0;}
+.about .family {border-radius:.25rem;margin:1rem 0 0 ;}
+@media (min-width: 768px) {
+  .about .family {float:right;max-width:16rem; margin:0 0 0 2rem;}
+}
 .goals ol {margin:0;padding:0;}
 .goals li,
 .about li {margin:0 0 1rem 1.5rem;list-style:disc;}
