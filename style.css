@@ -4,31 +4,31 @@
 :root {
     --white: hsl(225,100%,100%);
 
-    --shadow-lightest: hsla(225,50%,65%,.125); 
-    --shadow-light: hsla(225,50%,50%,.25); 
-    --shadow: hsla(225,50%,30%,.5); 
-    --shadow-dark: hsla(225,50%,15%,.75); 
+    --shadow-lightest: hsla(225,75%,65%,.125); 
+    --shadow-light: hsla(225,75%,50%,.25); 
+    --shadow: hsla(225,75%,30%,.5); 
+    --shadow-dark: hsla(225,75%,15%,.75); 
 
-    --bg-light: hsl(225,50%,95%);
-    --bg: hsl(225,50%,85%);
-    --bg-dark: hsl(225,50%,75%);
+    --bg-light: hsl(225,75%,95%);
+    --bg: hsl(225,75%,85%);
+    --bg-dark: hsl(225,75%,75%);
 
-    --text-light: hsl(225,50%,30%);
-    --text: hsl(225,50%,15%);
-    --text-dark: hsl(225,50%,5%);
+    --text-light: hsl(225,75%,30%);
+    --text: hsl(225,75%,15%);
+    --text-dark: hsl(225,75%,5%);
 
-    --link-lightest: hsl(225,50%,95%);
-    --link-light: hsl(225,50%,75%);
-    --link: hsl(225,50%,50%);
-    --link-dark: hsl(225,50%,35%);
+    --link-lightest: hsl(225,60%,95%);
+    --link-light: hsl(225,60%,75%);
+    --link: hsl(225,60%,50%);
+    --link-dark: hsl(225,60%,35%);
 
-    --accent-lightest: hsl(55,50%,95%);
-    --accent-light: hsl(55,50%,85%);
-    --accent: hsl(55,50%,50%);
-    --accent-dark: hsl(55,50%,35%);
-    --accent-darkest: hsl(55,50%,10%);
+    --accent-lightest: hsl(50,75%,95%);
+    --accent-light: hsl(50,75%,85%);
+    --accent: hsl(50,75%,50%);
+    --accent-dark: hsl(50,75%,35%);
+    --accent-darkest: hsl(50,75%,10%);
 
-    --highlight: hsl(350,50%,50%);
+    --highlight: hsl(350,60%,50%);
 
     --transition-smooth: all 1.2s cubic-bezier(0.16, 1, 0.3, 1);
     --transition-linear: all 0.2s ease-in;
@@ -527,7 +527,7 @@ header img {box-shadow:none;}
       transition: all 0.8s cubic-bezier(0.68, -0.6, 0.32, 1.6); 
       translate: 0px 0px;
       rotate: 0deg;
-      animation: subtle-jiggle 0.4s infinite linear;
+      animation: subtle-jiggle 0.8s infinite linear;
     }
 
     /* Individual Letter Transforms & Animation Delays */
@@ -585,6 +585,10 @@ header img {box-shadow:none;}
     
     .hero-title:hover .word-simple { 
       color: var(--highlight); 
+    }
+
+    .hero-title:hover .word-complex span { 
+      color: var(--text); 
     }
 
     .hero-title:hover .word-simple::after { 
