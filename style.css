@@ -4,10 +4,10 @@
 :root {
     --white: hsl(225,100%,100%);
 
-    --shadow-lightest: hsla(250,50%,65%,.125); 
-    --shadow-light: hsla(250,50%,50%,.25); 
-    --shadow: hsla(250,50%,30%,.5); 
-    --shadow-dark: hsla(250,50%,15%,.75); 
+    --shadow-lightest: hsla(225,50%,65%,.125); 
+    --shadow-light: hsla(225,50%,50%,.25); 
+    --shadow: hsla(225,50%,30%,.5); 
+    --shadow-dark: hsla(225,50%,15%,.75); 
 
     --bg-light: hsl(225,50%,95%);
     --bg: hsl(225,50%,85%);
@@ -83,7 +83,7 @@ h1 span.word-complex {font-family:"Rubik Glitch";font-weight:400;}
 h1 span {color:var(--highlight);}
 h4 + h1 {margin-top:0rem;}
 h2 {font-size:1.75rem;line-height:1.25;margin:0;}
-h3 {font-size:1.25rem;line-height:1.25;margin:0;}
+h3 {font-size:1rem;line-height:1.25;margin:0;}
 h3 strong {color:var(--highlight);font-weight:900;}
 h4 {font-weight:400;}
 h5 {font-weight:400;}
@@ -128,10 +128,10 @@ p + h2 {margin-top:4rem;}
 .resume {margin:0 0 2rem;}
 .resume ul {list-style: none;margin:0;padding:0;}
 .resume li {margin:1rem 0 0;}
-.resume a {padding:1rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: var(--shadow-lightest);color:var(--text);
+.resume a {padding:1rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: var(--white);color:var(--text);border:.25rem solid var(--link);
 
 }
-.resume a:hover {transform: scale(1.0125) rotate(-0.5deg);background:var(--shadow-light);border-color:var(--link-dark);}
+.resume a:hover {transform: scale(1.0125) rotate(-0.5deg);background:var(--bg);border-color:var(--link-dark);}
 .resume h3 {display:block;}
 .resume p:last-child {margin:0;}
 
@@ -189,8 +189,11 @@ ul {list-style:none;padding:0;}
 .project ul li img {margin:0 0 2rem; max-width:calc(100% - 1rem);border:.25rem solid var(--text-light);border-radius:.5rem;
   /*box-shadow: 0 1rem 2rem -1rem var(--shadow);*/
 }
-.project section {padding:4rem 0;}
 
+.project section {padding:2rem 0;}
+@media (min-width: 768px) {
+.project section {padding:4rem 0;}
+}
 @media (min-width: 768px) {
   .project ul li {display:flex;}
   .project ul li img {;max-width:calc(100% / 7 * 3);margin: 0 2rem 0 0;/*transform: rotate(-5deg);*/}
@@ -250,13 +253,14 @@ hr.negative {margin:-2rem auto;}
   background: url(images/swirl.svg) center no-repeat;
   height: 2.5rem;
   width: 2.5rem;
-  margin:4rem auto;
+  margin:2rem auto;
   position: relative;
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-name: progress;
 }
+
 .progress.triangle {background-image:url(images/triangle.svg);}
 .progress.plus {background-image:url(images/plus.svg);}
 @keyframes progress {
@@ -268,6 +272,9 @@ hr.negative {margin:-2rem auto;}
   }
 }
 
+@media (min-width: 768px) {
+  .progress {margin:4rem auto;}
+}
 /*
 .progress::before {
   animation-duration: 2s;
@@ -361,7 +368,7 @@ hr.negative {margin:-2rem auto;}
 
 .flex .image img {max-width:10rem;}
 img.logo,
-.flex .image img.logo {;max-width: 6rem;border-radius:.5rem;border:.25rem solid var(--shadow-light);}
+.flex .image img.logo {;max-width: 6rem;border-radius:.5rem;}
 .home img.logo {filter: grayscale(20%);max-width:15% ;}
 
 .flex .text {}
@@ -426,8 +433,8 @@ img.logo,
 
 .intro {margin-top:2rem;}
 header .intro p {overflow:visible;}
-.button {font-weight:600;border:0;display:inline-block;padding:1rem 2rem;background: var(--bg-light);color: var(--link);border-radius: .5rem;transition:.2s transform cubic-bezier(0.68, -0.6, 0.32, 1.6);}
-.button:hover {background:var(--bg);color:var(--link-dark);transform: scale(1.075) rotate(-2.5deg);}
+.button {font-weight:600;border:0;display:inline-block;padding:1rem 2rem;background: var(--bg);color: var(--link);border-radius: .5rem;transition:.2s transform cubic-bezier(0.68, -0.6, 0.32, 1.6);}
+.button:hover {background:var(--bg-dark);color:var(--link-dark);transform: scale(1.075) rotate(-2.5deg);}
 .button +.button {margin-left:1rem;}
 .primary {color:var(--white);background:var(--link);}
 .primary:hover {background:var(--link);color:var(--link-lightest);}
@@ -451,29 +458,30 @@ header .intro p {overflow:visible;}
 
 
 
-/*
 
-.splash {background:var(--text-dark) url(images/confetti.svg) top center fixed;}
+.splash {background-color:var(--shadow-lightest);}
+
+/*
 .splash,
 .splash .intro a:not(.button) {color:var(--white);}
 .splash nav strong {color:var(--bg);}
 .splash nav li a {color:var(--bg);}
 .splash nav li a:hover {color:var(--white);}
 
-
-
-.resume:first-of-type,
-.home .work section {margin-top:-5rem;}
-
-
-header {padding-bottom:5rem;}
-.splash {margin-bottom:-5rem;}
-
-.home header {padding-bottom:4rem;}
-.home .splash {margin-bottom:-8rem;}
-.project,
-.about {padding-top:5rem;}
 */
+.splash {padding-bottom:2rem;}
+.splash.contact {margin-bottom:-2.5rem;}
+.home header {margin-bottom:0}
+.work, 
+.home article {padding: 2rem 0 0;}
+
+@media (min-width: 768px) {
+  .splash {padding-bottom:4rem;}
+  .splash.contact {margin-bottom:-5rem;}
+  .home header {margin-bottom:0}
+  .work, 
+  .home article {padding: 4rem 0 0;}
+}
 
 /*
 .button, .primary,
