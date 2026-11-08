@@ -393,7 +393,7 @@ img.logo,
   .hats .flex .image {float:left;margin:0 2rem 2rem 0;height:6rem;width:6rem}
   .hats .flex .text {overflow:hidden;}
   .hats .flex .image img {display:none;}
-
+}
 .designer {background-image:url(images/about/designer.png)}
 .facilitator {background-image:url(images/about/facilitator.png)}
 .learner {background-image:url(images/about/learner.png)}
@@ -404,6 +404,16 @@ img.logo,
 .flex:hover .learner {background-image:url(images/about/learner.gif)}
 .flex:hover .mentor {background-image:url(images/about/mentor.gif)}
 .flex:hover .developer {background-image:url(images/about/developer.gif)}
+
+
+.timeline .flex {flex-direction:row;margin:2rem 0;}
+.timeline .flex p {margin:0;}
+.timeline .flex img {max-width:6rem;transform: rotate(-1.5deg);margin:0 2rem 0 0;}
+.timeline .flex:nth-of-type(even) {flex-direction: row-reverse;}
+.timeline .flex:nth-of-type(even) img {transform: rotate(1.5deg);margin:0 0 0 2rem;}
+.timeline .progress {margin:0 auto;}
+@media (min-width: 768px) {
+  .timeline .flex {;margin:2rem 0;}
 }
 
 .expertise div {margin: 1rem 0;}
@@ -459,7 +469,7 @@ header .intro p {overflow:visible;}
 
 
 
-.splash {background-color:var(--shadow-lightest);}
+.splash {background: linear-gradient(hsla(0, 100%, 100%, .25), var(--bg-light));}
 
 /*
 .splash,
