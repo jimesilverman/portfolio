@@ -128,10 +128,9 @@ p + h2 {margin-top:4rem;}
 .resume {margin:0 0 2rem;}
 .resume ul {list-style: none;margin:0;padding:0;}
 .resume li {margin:1rem 0 0;}
-.resume a {padding:1rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: var(--bg);color:var(--text);
-
-}
+.resume a {padding:1rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: var(--bg);color:var(--text);}
 .resume a:hover {transform: scale(1.0125) rotate(-0.5deg);background:var(--bg-dark);color:var(--link-dark);}
+.resume a:hover p {color:var(--text);}
 .resume h3 {display:block;}
 .resume p:last-child {margin:0;}
 
@@ -419,7 +418,7 @@ img.logo,
 .expertise div {margin: 1rem 0;}
 .expertise h5 {margin:.25rem 0 1rem;}
 
-.expertise li {list-style: disc;margin:0 0 .5rem 1rem}
+.expertise li {list-style: disc;margin:0 0 .5rem 1.25rem}
 .about .expertise div {margin:2rem 0;}
 
 .case-studies img {max-width: 100%}
@@ -434,11 +433,21 @@ img.logo,
 .quote .flex .text {margin:0 0 0 .5rem;}
 .quote h5 {margin:0;}
 .quote p {font-size:1rem;}
+
+
 @media (min-width: 768px) {
   .quote {margin:2rem 0;padding:2rem;}
   .quote .flex {;margin: 0;}
   .quote .flex .text {margin:0 0 0 1rem;}
   .quote p {font-size:1.25rem;}
+  .about .quote {
+    margin: 2rem 6rem 2rem 0;
+    transform: rotate(-1.5deg);
+  }
+  .about .quote:nth-of-type(even) {
+      margin: 2rem 0 2rem 6rem;
+      transform: rotate(1.5deg);
+  }
 }
 
 .intro {margin-top:2rem;}
