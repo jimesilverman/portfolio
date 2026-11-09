@@ -482,14 +482,12 @@ header .intro p {overflow:visible;}
 .splash {padding-bottom:2rem;}
 .splash.contact {margin-bottom:-2.5rem;}
 .home header {margin-bottom:0}
-.work, 
 .home article {padding: 2rem 0 0;}
 
 @media (min-width: 768px) {
   .splash {padding-bottom:4rem;}
   .splash.contact {margin-bottom:-5rem;}
-  .home header {margin-bottom:0}
-  .work, 
+  .home header {margin-bottom:0} 
   .home article {padding: 4rem 0 0;}
 }
 
