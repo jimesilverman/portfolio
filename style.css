@@ -350,8 +350,7 @@ hr.negative {margin:-2rem auto;}
   .about .family {float:right;max-width:16rem; margin:0 0 0 2rem;}
 }
 .goals ol {margin:0;padding:0;}
-.goals li,
-.about li {margin:0 0 1rem 1.5rem;list-style:disc;}
+.goals li {margin:0 0 1rem 1.5rem;list-style:disc;}
 @media (min-width: 768px) {
   .about {margin:4rem 0;}
 }
