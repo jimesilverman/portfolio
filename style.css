@@ -2,25 +2,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Rubik+Broken+Fax&family=Rubik+Lines&family=Rubik+Marker+Hatch&family=Rubik+Maze&family=Rubik+Pixels&display=swap');
 
 :root {
-    --white: hsl(225,100%,100%);
+    --white: hsl(250,100%,100%);
 
-    --shadow-lightest: hsla(225,75%,65%,.125); 
-    --shadow-light: hsla(225,75%,50%,.25); 
-    --shadow: hsla(225,75%,30%,.5); 
-    --shadow-dark: hsla(225,75%,15%,.75); 
+    --shadow-lightest: hsla(250,75%,65%,.125); 
+    --shadow-light: hsla(250,75%,50%,.25); 
+    --shadow: hsla(250,75%,30%,.5); 
+    --shadow-dark: hsla(250,75%,15%,.75); 
 
-    --bg-light: hsl(225,75%,95%);
-    --bg: hsl(225,75%,85%);
-    --bg-dark: hsl(225,75%,75%);
+    --bg-light: hsl(250,75%,95%);
+    --bg: hsl(250,75%,85%);
+    --bg-dark: hsl(250,75%,75%);
 
-    --text-light: hsl(225,75%,30%);
-    --text: hsl(225,75%,15%);
-    --text-dark: hsl(225,75%,5%);
+    --text-light: hsl(250,75%,30%);
+    --text: hsl(250,75%,15%);
+    --text-dark: hsl(250,75%,5%);
 
-    --link-lightest: hsl(225,60%,95%);
-    --link-light: hsl(225,60%,75%);
-    --link: hsl(225,60%,50%);
-    --link-dark: hsl(225,60%,35%);
+    --link-lightest: hsl(250,60%,95%);
+    --link-light: hsl(250,60%,75%);
+    --link: hsl(250,60%,50%);
+    --link-dark: hsl(250,60%,35%);
 
     --accent-lightest: hsl(50,75%,95%);
     --accent-light: hsl(50,75%,85%);
@@ -94,7 +94,7 @@ h2 + h5 {margin:.5rem 0 1.5rem;}
 header p {font-size:1rem;line-height:1.5;overflow:hidden;}
 header p span {font-size: 1.25rem;margin:0 .75rem;}
 /*
-header img {float: right;max-width:6rem;border:.25rem solid hsl(225,100%,100%);border-radius:.5rem;box-shadow: 0 1rem 2rem -0.5rem hsla(250,100%,15%,.5);margin:0 0 1rem 1rem;}
+header img {float: right;max-width:6rem;border:.25rem solid hsl(250,100%,100%);border-radius:.5rem;box-shadow: 0 1rem 2rem -0.5rem hsla(250,100%,15%,.5);margin:0 0 1rem 1rem;}
 */
 aside p {font-size: 1rem;text-align: center;margin:.5rem 0;}
 header img {margin: 1rem 0 1rem 1rem;float:right;transform: rotate(2.5deg);max-width:25%;border-radius:.5rem;}
@@ -150,9 +150,9 @@ ul {list-style:none;padding:0;}
 
 /*
 .work li a,
-.about .carousel li a {padding:1rem;margin:0 -.5rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: hsl(225,100%,100%);border:.25rem solid hsl(225,100%,50%);overflow:hidden;box-shadow:0 3rem 3rem -3rem hsla(255,100%,15%,.25);}
+.about .carousel li a {padding:1rem;margin:0 -.5rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: hsl(250,100%,100%);border:.25rem solid hsl(250,100%,50%);overflow:hidden;box-shadow:0 3rem 3rem -3rem hsla(255,100%,15%,.25);}
 .work li a:hover,
-.about .carousel li a:hover {transform: scale(1.0125) rotate(-0.5deg);background: hsl(225,100%,95%);}
+.about .carousel li a:hover {transform: scale(1.0125) rotate(-0.5deg);background: hsl(250,100%,95%);}
 */
 .work li a,
 .about .carousel li a {padding:1rem;margin:0 -.5rem;display:block;transition:.125s transform ease-in;border-radius:.5rem;background: var(--shadow-lightest);color:var(--text);
@@ -281,7 +281,7 @@ hr.negative {margin:-2rem auto;}
   animation-iteration-count: infinite;
   animation-name: progress;
   animation-direction:alternate;
-  background: hsl(225,100%,50%);
+  background: hsl(250,100%,50%);
   content: "";
   display: block;
   height: .25rem;
@@ -424,7 +424,7 @@ img.logo,
 .case-studies img {max-width: 100%}
 
 /*
-.quote {margin:1em 0;padding:1rem;background:hsl(225,100%,95%);border:.25rem solid hsl(225,100%,50%);border-radius:.5rem;box-shadow: 0 2rem 4rem -2rem hsla(255,100%,15%,.25)}
+.quote {margin:1em 0;padding:1rem;background:hsl(250,100%,95%);border:.25rem solid hsl(250,100%,50%);border-radius:.5rem;box-shadow: 0 2rem 4rem -2rem hsla(255,100%,15%,.25)}
 */
 .quote {margin:1em 0;padding:1rem;border-radius:.5rem;background:var(--accent-light);color:var(--accent-darkest);}
 
